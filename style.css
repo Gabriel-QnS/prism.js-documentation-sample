@@ -1,3 +1,5 @@
+@import './prism.css';
+
 :root{
     --blue: #0d6efd;
     --indigo: #6610f2;
@@ -143,4 +145,9 @@ code{
     body{
         border: 0;
     }
+}
+
+pre{
+    background-color: #111 !important;
+    border-color: #fff !important;
 }
