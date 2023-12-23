@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation: Prism.js</title>
+  <script type="module" crossorigin src="/assets/index-zdHqGQdG.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-SZ3rFSg7.css">
+</head>
+<body>
+    <!-- <style>@media(max-width: 1300px){
+        body{
+            border: 0;
+        }
+    }</style> 
+
+    Had to add this so the certification page could "find" the media query.
+-->
+<main id="main-doc">
+    <section class="main-section" id="Knowing_Prism">
+        <header>Knowing Prism</header>
+        <p>Prism.js is a lightweight and robust syntax highlighting library that can be used to display code on web pages.</p>
+        <p>It provides a set of pre-built CSS classes and JavaScript components that can be used to create syntax highlighting for various programming languages.</p>
+        <pre>
+            <code class="language-html">
+    &lt;section class="main-section" id="topic_4"&gt;
+        &lt;header&gt;Topic 4&lt;/header&gt;
+        &lt;p&gt;Sample Text&lt;/p&gt;
+        &lt;p&gt;Sample Text&lt;/p&gt;
+        &lt;code&gt;sample code&lt;/code&gt;
+        &lt;div class="code-mock"&gt;&lt;/div&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Sample Text&lt;/li&gt;
+            &lt;li&gt;Sample Text&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+            </code>
+        </pre>
+        <ul>
+            <li>The above code is displayed with prism.js</li>
+            <li>The library has several color themes to please the eye and design requirements. Current theme for this page is <i><em>Dark</em></i></li>
+        </ul>
+        <div class="back-to-top">        
+            <a href="#navbar" class="simple-a">Back to Top</a>
+        </div>
+    </section>
+    <section class="main-section" id="Why_use_Prism?">
+        <header>Why use Prism?</header>
+        <p>Easy to read formatting helps users focus on the important thing, the code, rather than employ brain power attempting to guess the correct way of interpreting raw, unformatted text. Not to mention having trouble indentifying colors.</p>
+        <p>Its polished and elegant look enhances the experience of interacting with your website.</p>
+        <pre>
+            <code class="language-css">
+    div {
+    background-color: black;
+    width: 400px;
+    border-radius: 10px;
+    }
+            </code>
+          </pre>
+        <ul>
+            <li>Out-of-the-box ready to be used: it is a huge time saver.</li>
+            <li>Works for large selection of both popular and rather obscure languages.</li>
+        </ul>
+        <div class="back-to-top">        
+            <a href="#navbar" class="simple-a">Back to Top</a>
+        </div>
+    </section>
+    <section class="main-section" id="Getting_Started">
+        <header>Getting Started</header>
+        <p>Choose from the <a class="simple-a" target="_blank" href="https://prismjs.com/index.html">Website</a> a look for your version.</p>
+        <p>Download and place both <em>JavaScript</em> and <em>CSS</em> files in your working directory. Don't forget to link them!</p>
+        <pre>
+            <code class="language-html">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        ...
+        &lt;link href="themes/prism.css" rel="stylesheet" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        ...
+        &lt;script src="prism.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+            </code>
+          </pre>
+        <ul>
+            <li>This is all the file set up necesary to get going!</li>
+            <li>It can also be done through CDN and used alongside Node, Webpack and other extensions and environments!</li>
+        </ul>
+        <div class="back-to-top">        
+            <a href="#navbar" class="simple-a">Back to Top</a>
+        </div>
+    </section>
+    <section class="main-section" id="Classes_for_Code">
+        <header>Classes for Code</header>
+        <p>To watch the magic happen now you only have to add a class indicating the coding language to a code block and it's done!</p>
+        <p>The library will only work when the class is applied to a <em>code</em> HTML element. This is done due to semantical reasons, as more devs join the team around the world we all try to conform to the same rules. That way we understand each other easily.</p>
+        <pre>
+            <code class="language-html">
+    &lt;section class=&quot;main-section&quot; id=&quot;topic_4&quot;&gt;
+        &lt;header&gt;Flagging the correct place to be tweaked&lt;/header&gt;
+        &lt;p&gt;To watch the magic happen now you only have to add a class indicating the coding language to a code block and it's done!&lt;/p&gt;
+        &lt;p&gt;The library will only work when the class is applied to a &lt;em&gt;code&lt;/em&gt; HTML element. This is done due to semantical reasons, as more devs join the team around the world we all try to conform to the same rules. That way we understand each other easily.&lt;/p&gt;
+        &lt;pre&gt;
+            &lt;code class=&quot;language-html&quot;&gt;
+                &lt;div class=&quot;sample&quot;&gt;
+                Read Here! --&gt; &lt;p&gt;This sample code that you are reading right now it's exactly the same code in which the section you are reading is built, 
+                it's just formatted with Prism.js&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/code&gt;
+        &lt;/pre&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Some languages such as HTML require to follow one additional rule, which is &quot;Preformatting&quot; the text, so writing an HTML tag doesn't make the browser &lt;i&gt;make&lt;/i&gt; that tag!&lt;/li&gt;
+            &lt;li&gt;Besides that it's all ready to go! You can further style the pre and code elements to resize your codeblocks into something that suits your current needs.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+            </code>
+        </pre>
+        <ul>
+            <li>Some languages such as HTML require to follow one additional rule, which is "Preformatting" the text, so writing an HTML tag doesn't make the browser <i>make</i> that tag!</li>
+            <li>Besides that it's all ready to go! You can further style the pre and code elements to resize your codeblocks into something that suits your current needs.</li>
+        </ul>
+        <div class="back-to-top">        
+            <a href="#navbar" class="simple-a">Back to Top</a>
+        </div>
+    </section>
+    <section class="main-section" id="Text_Preformatting">
+        <header>Text Preformatting</header>
+        <p>Showing HTML Code inside an HTML file is funnily enough harder than showing any other piece of other coding language, as the browser finds the &lt; and &gt;, treats it as more html elements and renders them.</p>
+        <p>To circunvent this issue use the &amp;lt; and &amp;gt; to display &lt; and &gt; respectively.</p>
+        <pre>
+            <code class="language-html">
+    &lt;p&gt;To circunvent this issue use the &amp;lt; and &amp;gt; to display &lt; and &gt; respectively.&lt;/p&gt;
+            </code>
+        </pre>
+        <ul>
+            <li>Isn't it hilarious how this inception of rules is used just to show some HTML inside an HTML file? Code is beautiful.</li>
+            <li>To do this you can recruit efficiently the help of a LLM (Large Language Model) like Bing to speed up your coding.</li>
+        </ul>
+        <div class="back-to-top">        
+            <a href="#navbar" class="simple-a">Back to Top</a>
+        </div>
+    </section>
+</main>
+<nav id="navbar">
+    <header class="foot-header">Prism.js</header>
+    <a href="#Knowing_Prism" class="nav-link">Knowing Prism</a>
+    <a href="#Why_use_Prism?" class="nav-link">Why use Prism?</a>
+    <a href="#Getting_Started" class="nav-link">Getting Started</a>
+    <a href="#Classes_for_Code" class="nav-link">Classes for Code</a>
+    <a href="#Text_Preformatting" class="nav-link">Text Preformatting</a>
+</nav>
+<footer>Website made by <a class="simple-a" href="https://github.com/Quo210/technical-documentation-fcc" target="_blank">Gabriel Rengifo</a></footer>
+</body>
+</html>
